@@ -1,0 +1,138 @@
+/*! navbar */
+
+.container .navbar-nav .nav-link.active, .container .navbar-nav .nav-link {
+  color: white;
+}
+
+.navbar.abs-navbar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+.container .navbar-brand {
+  font-size: 32px;
+  color: white;
+}
+
+.container .navbar-nav {
+  margin-left: auto;
+}
+
+.container .nav-link {
+  margin: 0 15px;
+}
+
+.container button {
+  border-radius: 44px;
+}
+
+/*! end navbar */
+
+/*! jumbotron */
+
+.jumbotron {
+  background-image: url(img/jumbotron-bg.jpg);
+  width: 100%;
+  height: 70vh;
+  margin-top: 0px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.jumbotron::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  background: linear-gradient(to top, black, rgba(0, 0, 0, 0));
+  z-index: 1;
+  top: 0;
+  position: absolute;
+}
+
+.jumbotron {
+  color: white;
+}
+
+.jumbotron .container {
+  text-align: center;
+  padding-top: 20vh;
+  width: 45vw;
+}
+
+.jumbotron .container h2 span {
+  font-weight: 666;
+}
+
+/*! akhir jumbotron */
+
+/* ! content */
+
+.content .container .row {
+  z-index: 4;
+  position: relative;
+  color: black;
+  background-color: white;
+  border-radius: 22px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+  margin-top: -16vh;
+  width: 50vw;
+}
+
+.content .container .row img {
+  width: 4rem;
+}
+
+.content .col p {
+  font-size: 11px;
+}
+
+.content .col h5 {
+  font-size: 16px;
+}
+
+/* !content */
+
+/* ! hero */
+
+.hero h1 {
+  font-size: 53px;
+}
+
+.hero .container-lg .row .col-md-6.text-light {
+  padding: 8px 0;
+}
+
+.hero button {
+  border-radius: 44px;
+}
+
+/* !end of hero */
+
+/* !footer */
+
+footer p {
+  margin-top: 50px;
+}
+
+/* !end of footer */
+
+@media (min-width: 992px) {
+  .nav-link {
+    text-transform: uppercase;
+  }
+  .container .nav-link:hover::after {
+    content: "";
+    display: block;
+    width: 50%;
+    margin: auto;
+    padding-bottom: 5px;
+    margin-bottom: -8px;
+    border-bottom: 2px solid white;
+  }
+}
